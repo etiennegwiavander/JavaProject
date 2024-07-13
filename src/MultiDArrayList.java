@@ -3,6 +3,8 @@ import java.util.*;
 public class MultiDArrayList {
     public static void main(String[] arg){
 
+        // 2D ArrayList = It's a container for for seperate ArrayLists
+
         ArrayList<ArrayList<String>> Families = new ArrayList(); // This 2D ArrayList initiallation brings together all the arraylists created below
 
         ArrayList<String> MyFamily = new ArrayList();
