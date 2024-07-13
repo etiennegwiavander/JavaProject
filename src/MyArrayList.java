@@ -15,9 +15,9 @@ public class MyArrayList {
 
         // Methods of ArrayList
 
-        food.set(0, null); // this method replaces an element at a particular index
-        food.remove(2); // This method removes an element at a particular index
-        food.clear(); // This method clears the entire ArrayList
+        food.set(0, "pieroggi"); // this method replaces an element at a particular index
+        // food.remove(2); // This method removes an element at a particular index
+        // food.clear(); // This method clears the entire ArrayList
 
 
         for(int i=0; i<food.size(); i++){ // we use .size() instead of the .length method when working with ArrayList
