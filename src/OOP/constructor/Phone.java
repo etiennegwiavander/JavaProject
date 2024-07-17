@@ -16,7 +16,7 @@ public class Phone {
     }
 
     void review(){
-        System.err.println("This " +this.model+ " has:");
+        System.out.println("This " +this.model+ " has:");
         System.out.println("Year of Manufacture: " + this.year);
         System.out.println("Operating System: " + this.OS);
         System.out.println("Running on android version: " + this.version);
