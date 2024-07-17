@@ -17,7 +17,7 @@ public class Phone {
     void call(){
         
         if(phoneIsOn){
-            System.out.println("The phone is on and you can make some calls");
+            System.out.println("Your " + make +" "+ model + " is on and you can make some calls");
         }else{
             System.out.println("Please turn on your phone to make call");
         }
