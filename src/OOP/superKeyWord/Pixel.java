@@ -1,14 +1,14 @@
 package OOP.superKeyWord;
 
 public class Pixel extends Phone{
-    String powers;
+    String chipset;
 
-    Pixel(String name, int year, String powers){
+    Pixel(String name, int year, String chipset){
         super(name, year);        
-        this.powers = powers;
+        this.chipset = chipset;
     }
 
     public  String toString(){
-        return super.toString()+this.powers;
+        return super.toString() + this.chipset;
     }
 }
