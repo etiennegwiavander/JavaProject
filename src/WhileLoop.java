@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import OOP.accessModifiers.package2.C;
+
 public class WhileLoop {
     public static void main(String[] args) {
         // Loops = Loops can execute a block of code as long as a specified condition is reached.
@@ -19,6 +21,10 @@ public class WhileLoop {
         System.out.println("Hello " + name);
         
         scanner.close();
+        
+        C c = new C();
+
+        System.out.println(c.publicMessage);
 
     }
 
