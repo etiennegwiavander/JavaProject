@@ -10,6 +10,9 @@ public class Phone {
         setModel(model);;
         setYear(year);;
     }
+    Phone(Phone copiedPhone){
+        this.copy(copiedPhone);
+    }
     // Getters
     public String getName(){
         return name;
@@ -32,7 +35,7 @@ public class Phone {
         this.year = year;
     }
 
-    
+
     public void copy(Phone copiedAttr){
         this.setName(copiedAttr.getName());
         this.setModel(copiedAttr.getModel());
