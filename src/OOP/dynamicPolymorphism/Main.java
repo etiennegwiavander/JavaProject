@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         //Dynamic Polymorphism
         // dynamic = after compilation (during runtime)
+        // you can create an object and make space for it in memory even if you don't know what type of object you want quite yet
 
         Scanner scanner = new Scanner(System.in);
         Phones phones;
@@ -14,13 +15,15 @@ public class Main {
         int choice = scanner.nextInt();
 
         if(choice==1){
-            phones = new Phones();
+            phones = new Pixel();
             phones.os();
         }else if(choice==2){
-            phones = new Phones();
+            phones = new Samsung();
             phones.os();
         }else{
-            
+
+            phones = new Phones();
+            System.out.println("The phone you chose isn't available on the list but, 4");
             phones.os();
         }
 
