@@ -18,7 +18,11 @@ public class Main {
             System.out.println("Enter a whole number for y:");
             int y = scanner.nextInt();
 
-            int z = x/y;
+            // System.out.println("Enter a mathematical operation (+, -, *, /): ");
+            // char u = scanner.next().charAt(0);
+            // System.out.println("The symbol is "+ u);
+
+            int z = x / y;
 
             System.out.println("The result of "+ x +" divided by "+ y + " is: "+ z);
         }
