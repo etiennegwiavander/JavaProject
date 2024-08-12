@@ -25,7 +25,28 @@ public class Main {
         if (choice == 1){
             System.out.println("You've chosen English as your main language");
             displayMenu(choice);
-            
+
+            int selection = scanner.nextInt();
+
+            switch (selection) {
+                case 1:
+                    checkBalance(); // Replace with actual balance retrieval logic
+                    break;
+                case 2:
+                    // Implement functionality for withdrawal
+                    withdrawCash(scanner);
+                    break;
+                case 3:
+                    // Implement functionality for deposit
+                    depositCash(scanner);                   
+                    
+                    break;
+                case 4:
+                    System.out.println("Thank you for using " + bankName + " ATM service. Have a nice day!");
+                    return; // Exit the program
+                default:
+                    System.out.println("Invalid selection. Please enter a number between 1 and 4.");
+            }
         }else if(choice == 2){
             System.out.println("Vous avez choisi le français comme langue principale");
             displayMenu(choice);
@@ -78,7 +99,9 @@ public class Main {
         double withdrawalAmount = scanner.nextDouble();
 
         if (withdrawalAmount > accountBalance) {
-            System.out.println("Insufficient funds. Your current balance is: " + accountBalance + " CFA");
+            System.out.println("Process terminated!");
+            System.out.println("Reason: Insufficient funds. Your current balance is: " + accountBalance + " CFA");
+            System.out.println("Enter an ammount within your account balance");
         } else {
             accountBalance -= withdrawalAmount;
             System.out.println("Withdrawal successful. Your remaining balance is: " + accountBalance + " CFA");
