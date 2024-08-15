@@ -11,7 +11,7 @@ public class Main {
             FileWriter writer = new FileWriter("C:\\Users\\ETIENNE G\\Desktop\\JavaProject\\src\\OOP\\fileWritter\\adress.txt");
             writer.write("My address \nEtienne Gwiavander \nBamenda Cameroon \nNorthwest Region");
             writer.append("\nMile3 Nkwen");
-            writer.close();
+            writer.close(); // always close the filewriter when you are done with it
 
         } catch (IOException e) {
             
